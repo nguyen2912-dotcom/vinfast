@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Cách 1: Constructor
+        var Car1 = new Object();
+
+        // Cách 2: Literal (empty)
+        var Car2 = {};
+
+        // Cách 3: Literal
+        var Car3 = {
+            Brand: 'Vinfast', 
+            Model: 'VF8 LUX Plus',
+            Price: 68.000
+        };
+        //////////////////////////
+        Car1.Brand = "Toyata";
+        Car2.Brand = "Mazda";
+        /////////////////////////
+        with (document){
+            write(Car1.Brand + "<br>");
+            write(Car2.Brand + "<br>");
+            write(Car3.Brand);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

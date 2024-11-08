@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       function kiemtra(){
+        //1. Name
+    //         var sName = document.getElementById("txtName").value;
+    //         if(sName.length == 0){ //(sName == "")
+    //             alert("Tên không được bỏ trống!");
+    //             document.getElementById("txtName").focus();
+    //     return false;
+    // }
+    //  //2. Mail
+    //  var sMail = document.getElementById("txtMail").value;
+    //         if((sMail.indexOf("@") < 0_)|| (sMail.indexOf(".") < 0 )){
+    //             alert("Email không hợp lệ!");
+    //             document.getElementById("txtMail").focus();
+    //     return false;
+    // }
+     //3. Phone
+     var sPhone = document.getElementById("txtPhone").value;
+             if(isNaN(sPhone)){
+                 alert("Phone chỉ nhập số!");
+                document.getElementById("txtPhone").focus();
+            return false;
+     }
+       }
+    </script>
+</head>
+<body>
+    <form action="https://www.youtube.com/watch?v=xvFZjo5PgG0" onsubmit="return kiemtra()">
+        <!-- Full Name: <input id="txtName" autofocus> <br>
+        Email: <input id="txtMail" > <br> -->
+        
+        Phone Number:<input id="txtPhone" text-="PhoneNumber*"
+        > <br>
+       <button>Đăng ký</button>
+    </form>
+</body>
+</html>

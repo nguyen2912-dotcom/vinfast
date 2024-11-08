@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Ten" content="Cao Phuc Nguyen">
+    <meta name="File" content="index">
+    <meta name="Diem" content="30">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function kiemtra(){
+            //1. Name
+           var sName = document.getElementById("txtName").value;
+           var reName = /^[\w\s]+$/;
+           if(!reName.test(sName)){
+            alert("Tên không được để trống!");
+            document.getElementById("txtName").value = "";          
+            document.getElementById("txtName").focus();
+                return false;
+           }
+
+             //2. Mail
+             var sMail = document.getElementById("txtMail").value;
+             var reMail =  /^\w+[@]\w+[.]\w+([.]\w+)?$/;
+                    // if((sMail.indexOf("@") < 0)|| (sMail.indexOf(".") < 0 )){
+                        if(!reMail.test(sMail)){
+                    alert("Email không hợp lệ!");
+                    document.getElementById("txtMail").value = "";   
+                    document.getElementById("txtMail").focus();
+                return false;
+            }
+            //3. Phone
+            var sPhone = document.getElementById("txtPhone").value;
+            var rePhone = /^\d{8,12}$/;
+             if(!rePhone.test(sPhone)){
+                        alert("Phone chỉ nằm trong khoảng 8 - 12 số!");
+                        document.getElementById("txtPhone").value = "";
+                        document.getElementById("txtPhone").focus();
+                    return false;
+            }
+       
+        //4. Show Message
+         //4.1. Chuẩn bị nội dung message
+      
+         var mes = [];
+         mes.push("Congratulation!");
+        
+         mes.push("Your contact: information has been sent successfully!");
+         alert(mes.join("\n"));
+         }
+    </script>
+     <style>div {text-align: center;}</style> 
+   
+
+</head>
+<div class="center"></div>
+
+<body>
+    <form action="https://www.youtube.com/watch?v=xvFZjo5PgG0" onsubmit="return kiemtra()">
+    
+        <header>
+        <div id="Logo">
+            <img src="./logo.png" width="10%" class="center" alt="Softing">
+        </div>
+        <div class="myNav">
+            <a href="R1_index.html">HOME</a>
+            <a href="">ABOUT</a>
+            <a href="">FEATURES</a>
+            <a href="">OVERVIEW</a>
+            <a href="">PRICING </a>
+            <a href="">TEAM</a>
+            <a href="R2_contact.html">CONTACT</a>
+        </div>
+   
+        
+    </header>
+    <h1 style="text-align: center;">CONTACT US </h1>
+    <style text="align"></style>
+  <div><td style="size: 20%;">
+    First Name:<input  id="txtName" autofocus required ></td > <br>
+    Last Name<input id="txtName" required><br>
+    Email<input id="txtMail" required> <br>
+    Phone<input id="txtPhone" required> <br>
+    Tell Us About Project<input type="text" required> <br>
+
+   <input type="radio" name="sour">Company
+   <input type="radio" name="sour"checked>Personal <br>
+   <button>Send Message</button>   <input type="reset" value="Reset"> <br>
+
+
+        </div>
+      
+      
+        
+    </footer>
+</form>
+&copy; Copyright 2021.All Rights Reserved by SOFTING
+</body>
+
+</html>

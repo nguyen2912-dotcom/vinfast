@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Document</title>
+    <script>
+        //  function kiemtra(){
+        const kiemtra = () => {
+            //1. Name
+           var sName = document.getElementById("txtName").value;
+           var reName = /^[T]\d{1}[.]\d{4}[.][M|A|E]{1}[0|1]{1}$/;
+           if(!reName.test(sName)){
+            alert("Invalid Class Name!");
+                        document.getElementById("txtName").focus();
+                return false;
+           }
+         }
+    </script>
+</head>
+<body>
+    <div class="container"></div>
+    <form action="https://dinosaurgame.app" onsubmit="return kiemtra()">
+        Class Name: <input id="txtName"> <br>
+        <button>Create New Class</button>
+
+    </form>
+</body>
+</html>

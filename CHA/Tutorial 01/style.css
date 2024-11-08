@@ -1,0 +1,40 @@
+*{
+    font-family: tahoma;
+    box-sizing: border-box;
+}
+
+#Logo{
+    color: pink;
+    font-size: 20pt;
+        font-family: Verdana;
+        font-weight: bold;
+        text-shadow: 4px 4px 4px firebrick;
+}
+
+*{
+    font-family: tahoma;
+    box-sizing: border-box;
+}
+
+    .myNav{
+    width: 100%;
+    background-color: orange;
+    overflow: auto;
+}
+
+    .myNav a{
+    width: 14%;
+    float: left;
+    text-align: center;
+    font-size: 14pt;
+    color: yellow;
+    text-decoration: none;
+    padding: 25px 12px;
+}
+.myNav a:hover{
+    background-color: rgb(222, 255, 7);
+}
+footer{
+    position: absolute;
+    bottom: 0px;
+}

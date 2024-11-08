@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Ten" content="Cao Phuc Nguyen">
+    <meta name="File" content="index">
+    <meta name="Diem" content="30">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+<script>
+    function kiemtra(){
+    var sName = document.getElementById("txtName").value;
+    var reName = /^\w\s +$/;
+                    if(reName.test(sName)){
+                        alert("Tên chưa được đăng ký!");
+                        document.getElementById("txtName").focus();
+                return false;
+                    }
+    }
+</script>
+</head>
+
+<body>
+    
+    <header>
+        <div id="Logo">Logo</div>
+        <div class="myNav">
+            <a href="index.html">Home</a>
+            <a href="">Utilities</a>
+            <a href="">Share</a>
+            <a href="">Knowledge</a>
+            <a href="register.html">SignUp</a>
+            <a href="">SignIn</a>
+            <a href="">About Us</a>
+        </div>
+    </header>
+    <section>
+        <img src="04/file04.jpg" width="25%" class="left" margin: center    >
+    </section>
+    <footer>
+        &copy; By Me. All Rights Reserved
+    </footer>
+    
+    <h1>SignIn Form</h1>
+   Login name <input id="txtName"> <br>
+   Password <input id="Password"><br>
+   <button>Register</button>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            constructor: var days = new Array("Thứ 2", "Thứ 3", "Thứ 4");
+            literal    : var days = ["Thứ 2", "Thứ 3", "Thứ 4"];
+        */
+        var days = ["Thứ Hai", "Thứ Ba", "Thứ Tư"];
+        with (document) {
+            write("<h3>Dùng method join() </h3>");
+            write(days.join(" - "));
+            write("<p>");
+
+            days.push("Thứ Năm", "Thứ Sáu", "Thứ Bảy", "Chủ Nhật");
+            write("<hr align='left' width= '30%'>  ");
+            write(days.join(" - "));
+            write("<hr align='left' width= '30%'>  ");
+
+            write("<h3>Dùng Vòng Lặp (Thường) </h3>");
+            write("<pre>");
+            for (var i = 0; i < days.length; i++) {
+                writeln(days[i])
+            }
+            write("</pre>");
+
+            write("<hr align='left' width= '30%'>  ");
+            write("<h3>Dùng Vòng Lặp (For each) </h3>");
+
+            for (var ngay in days) {
+                write(days[ngay] + "<br>")
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

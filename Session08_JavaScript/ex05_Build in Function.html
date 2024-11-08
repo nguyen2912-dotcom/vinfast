@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        Object based:-> Build in = Xây dựng sẵn -> window
+        [Đối tượng].[Phương thức]
+
+        1. alert();
+        window.alert("The address cannot be blank!"+"<br>");
+        alert("Your order will be delivery soon");
+        
+        2. confirm(); Làm mới hay thay đổi dữ liệu phải có confirm 
+        Ex: ================================
+        var traloi = confirm("Are you sure to delete this record");
+        if(traloi){ //(traloi == true) //(traloi !=false)
+            document.write("<h2 style='font-style: italic; color: blue; font-size: 22pt; text-align: center'> Delete Succesfully!</h2> ")
+        }
+       else{
+        document.write("<h2 style='font-style: italic; color: blue; font-size: 22pt; text-align: right'> Nothing to delete!</h2> ")
+    }
+        ================================
+
+        3. prompt()
+         Ex: ================================
+        var name = prompt("Nhập tên");
+       var age = prompt("Nhập tuổi");
+       for(var i = 1; i <= age; i++){
+        document.write(i + ". " + name + "<br>");
+       
+       }
+         ================================
+
+       4. parseInt(), parseFloat()
+       Ex: ================================
+       var num1 = "6";
+       var num2= "9";
+       var sum = num1 + num2;
+       var total = parseInt(num1) +parseInt(num2);
+       with(document){
+        write("<H1>");
+        write("+ Case 1:" +num1 + " + " + num2 + "= " + sum);
+        write("<br>");
+        write("+ Case 2: " +num1 + " + " + num2 + "= " + total);
+        write("</H1>");
+       }
+        ================================
+      
+        5. isNaN()
+         Ex: ================================
+          var phone = prompt("Enter your phone number");
+       if(isNaN(phone)){
+        alert("Phone is digits only!");
+       }
+       else{
+        alert(phone + "is save!");
+       }
+
+       6. eval()
+            var result = eval("1 + 5 + 7 * 2");
+            document.write(result);
+        */
+            
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

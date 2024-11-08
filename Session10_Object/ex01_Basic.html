@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        1. Có 3 loại đối tượng:
+            1.1 HTML
+            1.2 Script
+            1.3 Browser
+        2. Cú pháp: 
+            2.1 Thuộc tính:
+            [Đối tượng].[Thuộc tính]
+            Ví dụ: document.title
+            2.2 Phương thức:
+            [Đối tượng].[Phương thức]
+            Ví dụ: document.write
+        */
+        //Thuộc tính
+        var s = document.title;
+        s = "https://www.youtube.com" + s;
+        document.title = s;
+
+        //Phương thức 
+        document.write("Tiêu đề trang: " + document.title)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

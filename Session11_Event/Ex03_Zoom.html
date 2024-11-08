@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const thaydoi = (n) => {
+            var size = document.getElementById("imgXe").width;
+            document.getElementById("imgXe").width = size* n;
+        }
+    </script>
+</head>
+<body>
+    <img id="imgXe" src="./yamaha-pg-1-xanh-duong.jpg" width="400"
+                    onmouseover="thaydoi(2)"
+                    onmouseout="thaydoi(1/2)">
+</body>
+</html>

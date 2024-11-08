@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const thaydoi = () => {
+            var label = document.getElementById("btn").value;
+            var size = document.getElementById("imgXe").width;
+            if(label == "zoom-out"){
+            document.getElementById("btn").value = "zoom-in";
+            document.getElementById("imgXe").width = size * 2; 
+        }
+        else{document.getElementById("btn").value = "zoom-out";
+        document.getElementById("imgXe").width = size * 1/2; 
+    }
+}
+    </script>
+</head>
+<body>
+    <input id="btn" type="button" value="zoom-out" onclick="thaydoi()">
+    <hr align="left" width="400">
+    <img id="imgXe" src="./yamaha-pg-1-xanh-duong.jpg" width="200">
+                    
+</body>
+</html>

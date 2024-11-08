@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #panel{
+            padding: 30px;
+            width: 250px;
+            border: thin solid #444;
+        }
+    </style>
+    <script>
+        const changeColor = (color) => {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</head>
+<body>
+    <h1>Change Theme</h1>
+    <div id="panel">
+        <input type="radio" name="rdColor" onclick="changeColor('red')">Ruby <br>
+        <input type="radio" name="rdColor" onclick="changeColor('blue')">Aqua <br>
+        <input type="radio" name="rdColor" onclick="changeColor('Lavender')">Lavender <br>
+        <input type="radio" name="rdColor" onclick="changeColor('black')">Black <br>
+        <input type="radio" name="rdColor" onclick="changeColor('white')" checked>Default 
+    </div>
+</body>
+</html>
